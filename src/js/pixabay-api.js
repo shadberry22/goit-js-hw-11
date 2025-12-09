@@ -14,6 +14,5 @@ export function getImagesByQuery(query) {
         safesearch: true,
       },
     })
-    .then(response => response.data)
-    .catch(error => console.log(error.message));
+    .then(response => response.data);
 }

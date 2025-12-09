@@ -1,10 +1,10 @@
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-const galleryContainer = document.querySelector('.gallery');
-const isLoaderShown = document.querySelector('.loader');
+const galleryContainer = document.querySelector('.js-gallery');
+const loaderElem = document.querySelector('.js-loader');
 
-const lightbox = new SimpleLightbox('.gallery a', {
+const lightbox = new SimpleLightbox('.js-gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
 });
@@ -57,9 +57,9 @@ export function clearGallery() {
 }
 
 export function showLoader() {
-  isLoaderShown.classList.add('is-visible');
+  loaderElem.classList.add('is-visible');
 }
 
 export function hideLoader() {
-  isLoaderShown.classList.remove('is-visible');
+  loaderElem.classList.remove('is-visible');
 }
