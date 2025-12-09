@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 11</title>
     <script type="module" crossorigin src="/goit-js-hw-11/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-2TIoixgK.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/vendor-CXh9fJFm.css">
     <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/index-CfDg3wlZ.css">
   </head>
   <body>
     <!-- FORM -->
-    <form class="form">
+    <form class="form js-search-form" novalidate autocomplete="off">
       <label>
         <input
           class="form-input"
@@ -24,10 +26,10 @@
     </form>
 
     <!-- GALLERY -->
-    <ul class="gallery"></ul>
+    <ul class="gallery js-gallery"></ul>
 
     <!-- LOADER -->
-    <div class="loader"></div>
+    <div class="loader js-loader"></div>
 
   </body>
 </html>
